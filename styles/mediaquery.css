@@ -123,10 +123,20 @@
     margin: 0px;
     margin-top: 20px;
   }
+  .hero-heading {
+    width: 100% !important;
+    font-size: 40px;
+    padding: 5px;
+  }
+  .hero-para {
+    font-size: 20px;
+    line-height: 30px;
+  }
   .view-btn,
   .contact-btn {
-    padding: 8px 24px;
-    font-size: 14px;
+    padding: 12px 24px;
+    font-size: 20px;
+    margin-bottom: 20px;
   }
   .span {
     font-size: 18px;
@@ -142,6 +152,15 @@
   .about-link-para {
     flex-direction: column;
     margin-bottom: 40px;
+  }
+  .about-para {
+    width: 100%;
+    font-size: 18px;
+  }
+  .get-in-touch-btn {
+    padding: 12px 24px;
+    font-size: 20px;
+    margin-bottom: 20px;
   }
   .about-image {
     width: unset !important;
