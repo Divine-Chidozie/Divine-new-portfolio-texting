@@ -3,39 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/mediaquery.css" />
     <title>Divine Portfolio</title>
   </head>
   <body>
     <header>
-      <div class="nav-header">
+      <div class="nav-header" id="nav-header">
         <span><a href="#home" class="logo">Divine Creatives</a></span>
         <nav>
           <ul class="nav-header-list">
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a class="nav-list-items" href="#projects">Projects</a></li>
+            <li><a class="nav-list-items" href="#experience">Experience</a></li>
+            <li><a class="nav-list-items" href="#education">Education</a></li>
+            <li><a class="nav-list-items" href="#contact">Contact</a></li>
           </ul>
         </nav>
 
         <div class="download-toggle-container">
-          <!-- <div class="nav-header-btn-container">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#e3e3e3"
-            >
-              <path
-                d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"
-              />
-            </svg>
-            <a href="resume-pdg">Download Resume</a>
-          </div> -->
           <a href="resume.pdf" class="nav-header-btn-container" download>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +35,7 @@
                 d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"
               />
             </svg>
-            <span class="resume-btn">Download Resume</span>
+            <span id="download-btn" class="resume-btn">Download Resume</span>
           </a>
 
           <div>
@@ -64,13 +51,31 @@
               />
             </svg>
           </div>
+
+          <div class="hamburger-menu" id="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <nav>
+            <ul class="mobile-menu" id="mobileMenu">
+              <li><a href="#home">Home</a></li>
+              <li><a class="nav-list-items" href="#projects">Projects</a></li>
+              <li>
+                <a class="nav-list-items" href="#experience">Experience</a>
+              </li>
+              <li><a class="nav-list-items" href="#education">Education</a></li>
+              <li><a class="nav-list-items" href="#contact">Contact</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
 
     <main>
       <!-- ===== Hero Section ===== -->
-      <section id="home">
+      <section id="home" data-aos="fade-down">
         <div class="hero-container">
           <div class="hero-inner-container">
             <span class="span">Available For Projects</span>
@@ -87,20 +92,17 @@
             </p>
 
             <div class="hero-btn-container">
-              <a href="#" class="view-btn">View My Works</a>
-              <a href="#" class="contact-btn">Contact Me</a>
+              <a href="#projects" class="view-btn">View My Works</a>
+              <a href="#contacts" class="contact-btn">Contact Me</a>
             </div>
           </div>
 
           <div class="hero-image-container">
-            <div>
-              <!-- Add image here -->
-              <img
-                src="images/Capture.png"
-                alt="Divine Chidozie Portfolio Preview"
-                class="hero-image"
-              />
-            </div>
+            <img
+              src="images/Capture.png"
+              alt="Divine Chidozie Portfolio Preview"
+              class="hero-image"
+            />
           </div>
         </div>
       </section>
@@ -136,10 +138,15 @@
               >
             </div>
 
-            <div class="about-image-container">
+            <div
+              class="about-image-container"
+              data-aos="fade-right"
+              data-aos-delay="200"
+            >
               <img
                 src="images/Capture.png"
                 alt="Divine Chidozie Portfolio About-Me Image"
+                class="about-image"
               />
             </div>
           </div>
@@ -148,7 +155,7 @@
 
       <!-- ===== Project Section ===== -->
       <section id="projects">
-        <div class="project-section">
+        <div class="project-section" data-aos="fade-up" data-aos-delay="200">
           <div class="project-heading-para">
             <h2 class="project-heading">My Projects</h2>
             <p class="project-para">
@@ -159,9 +166,76 @@
             </p>
           </div>
 
-          <div>
+          <div class="project-container">
             <!-- Remember to add projects here to this div container later -->
             <!-- Also add a link with the view more text on it -->
+            <div class="first-project-paucek">
+              <img
+                src="images/paucek.png"
+                alt="A Delivery Web Application built with html, Css, JavaScript"
+              />
+              <h3 class="project-heading-paucek">paucek</h3>
+              <p class="first-project-para">
+                paucek is a responsive delivery web applications built with
+                HTML, CSS, and JavaScript that streamlines order placement and
+                real-time trancking. it delivers an intuitive. mobile.first
+                interface for customers and couriers, with clear status updates,
+                efficient routing, and performance-focused design to ensure a
+                seamless last-mile experience
+              </p>
+              <ul class="project-list-item">
+                <li>Html</li>
+                <li>Css</li>
+                <li>JavaScript</li>
+              </ul>
+              <a href="#" class="project-link">View Live</a>
+            </div>
+
+            <div class="first-project-paucek">
+              <img
+                src="images/paucek.png"
+                alt="A Delivery Web Application built with html, Css, JavaScript"
+                width="250px"
+              />
+              <h3 class="project-heading-paucek">paucek</h3>
+              <p class="first-project-para">
+                paucek is a responsive delivery web applications built with
+                HTML, CSS, and JavaScript that streamlines order placement and
+                real-time trancking. it delivers an intuitive. mobile.first
+                interface for customers and couriers, with clear status updates,
+                efficient routing, and performance-focused design to ensure a
+                seamless last-mile experience
+              </p>
+              <ul class="project-list-item">
+                <li>Html</li>
+                <li>Css</li>
+                <li>JavaScript</li>
+              </ul>
+              <a href="#" class="project-link">View Live</a>
+            </div>
+
+            <div class="first-project-paucek">
+              <img
+                src="images/paucek.png"
+                alt="A Delivery Web Application built with html, Css, JavaScript"
+                width="250px"
+              />
+              <h3 class="project-heading-paucek">paucek</h3>
+              <p class="first-project-para">
+                paucek is a responsive delivery web applications built with
+                HTML, CSS, and JavaScript that streamlines order placement and
+                real-time trancking. it delivers an intuitive. mobile.first
+                interface for customers and couriers, with clear status updates,
+                efficient routing, and performance-focused design to ensure a
+                seamless last-mile experience
+              </p>
+              <ul class="project-list-item">
+                <li>Html</li>
+                <li>Css</li>
+                <li>JavaScript</li>
+              </ul>
+              <a href="#" class="project-link">View Live</a>
+            </div>
           </div>
         </div>
       </section>
@@ -184,21 +258,67 @@
         </section>
       </section>
 
+      <!-- ===== Design and Development Section ===== -->
+      <section>
+        <div class="design-section" data-aos="fade-up" data-aos-delay="400">
+          <h2 class="design-heading">My Design and Development Process</h2>
+
+          <section class="design-pattern">
+            <!-- first div -->
+            <div class="design-pattern-11">
+              <div class="design-number">1</div>
+              <h4 class="design-pattern-heading">Discovery</h4>
+              <p class="design-para">
+                Understanding your goals audience and business needs
+              </p>
+            </div>
+
+            <!-- second div -->
+            <div class="design-pattern-11">
+              <div class="design-number">2</div>
+              <h4 class="design-pattern-heading">Planning</h4>
+              <p class="design-para">
+                Information architecture wireframes and project roadmap
+              </p>
+            </div>
+
+            <!-- third div -->
+            <div class="design-pattern-11">
+              <div class="design-number">3</div>
+              <h4 class="design-pattern-heading">Design & Development</h4>
+              <p class="design-para">
+                Creating visual designs and building functional prototypes
+              </p>
+            </div>
+
+            <!-- fouth div -->
+            <div class="design-pattern-11">
+              <div class="design-number">4</div>
+              <h4 class="design-pattern-heading">Launch & Support</h4>
+              <p class="design-para">
+                Deployment testing and ongoing maintance
+              </p>
+            </div>
+          </section>
+        </div>
+      </section>
+
       <!-- ===== CTA Section ===== -->
       <section id="contact">
-        <div class="contact-section">
+        <div class="contact-section" data-aos="zoom-in" data-aos-delay="400">
           <div class="contact-heading-para">
-            <h2 class="contact-heading">Contact Me</h2>
+            <h2 class="contact-heading">Ready to Start Your Project?</h2>
             <p class="contact-para">
               Got a project, idea, or just want to say hello? Drop me a message
               through the form or reach me via the contact details below—i'd
               love to hear from you
             </p>
+            <a href="#" class="work-together-btn">Let's Work Together</a>
           </div>
 
-          <div>
-            <div>
-              <address>
+          <section class="contact-address-form">
+            <aside class="address">
+              <address class="email-container">
                 <!-- Add message image icon later: don't forget -->
                 <h4>Email</h4>
                 <p>
@@ -208,84 +328,100 @@
                 </p>
               </address>
 
-              <div>
+              <address class="phone-container">
                 <!-- Add phone icon image later: don't forget -->
                 <h4>Phone</h4>
                 <p>+234 814 244 3836</p>
-              </div>
+              </address>
 
-              <div>
+              <address class="location-container">
                 <!-- Add location image icon later: don't forget -->
                 <h4>Location</h4>
                 <p>Lagos State, Nigeria</p>
-              </div>
+              </address>
 
               <div>
                 <!-- remember to add google map here -->
               </div>
-            </div>
+            </aside>
 
-            <div>
-              <form action="/form/api/contact" method="post">
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="Your Name"
-                />
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Your Email"
-                />
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="3"
-                  placeholder="Your Message"
-                ></textarea>
+            <form action="/form/api/contact" method="post">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your Name"
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your Email"
+              />
+              <textarea
+                id="message"
+                name="message"
+                rows="3"
+                placeholder="Your Message"
+              ></textarea>
 
-                <button type="submit">Send Message</button>
-              </form>
-            </div>
-          </div>
+              <button type="submit" class="submit-btn" id="submit-btn">
+                Send Message
+              </button>
+            </form>
+          </section>
         </div>
       </section>
     </main>
 
     <footer>
-      <div>
-        <h2>Divine Chidozie</h2>
-        <p>
-          Crafting engaging and responsive web experiences. I build clean,
-          modern interfaces for brands and startups
+      <div class="footer-section">
+        <div class="footer">
+          <div class="footer-section-container">
+            <h2 class="footer-heading">Divine Chidozie</h2>
+            <p class="footer-para">
+              Crafting engaging and responsive web experiences. I build clean,
+              modern interfaces for brands and startups
+            </p>
+          </div>
+
+          <div class="footer-section-container">
+            <h4 class="links-heading">Quick Links</h4>
+            <ul class="footer-list-items">
+              <li><a href="#">About Me</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Skills</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section-container">
+            <h4 class="connect-heading">Connect with me</h4>
+            <p class="connect-para">
+              Email:
+              <a href="mailto:igwedivine92@gmail.com">igwedivine92@gmail.com</a>
+            </p>
+
+            <div>
+              <!-- add social media icons: also to represent your social handles -->
+            </div>
+          </div>
+        </div>
+        <p class="copyright">
+          &copy; <span id="year"></span> Divine Chidozie. All rights reserved.
         </p>
       </div>
-
-      <div>
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4>Connect with me</h4>
-        <p>Email: <a href="mailto:">igwedivine92@gmail.com</a></p>
-
-        <div>
-          <!-- add social media icons: also to represent your social handles -->
-        </div>
-      </div>
-
-      <p>
-        &copy; <span id="year"></span> Divine Chidozie. All rights reserved.
-      </p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 1000,
+        easing: "ease-in-out",
+        once: true,
+      });
+    </script>
 
     <script src="script.js"></script>
   </body>
