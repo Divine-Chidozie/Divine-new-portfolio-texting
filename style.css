@@ -14,6 +14,11 @@ body {
   color: black;
 }
 
+.dark-background-color {
+  background-color: black;
+  color: white;
+}
+
 /* body::-webkit-scrollbar {
   width: 8px;
 } */

@@ -119,6 +119,15 @@
   .mobile-menu.active {
     display: block;
   }
+  .new-download {
+    background-color: oklch(49.6% 0.265 301.924);
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin: 0 10px;
+    margin-bottom: 20px;
+    width: 95%;
+  }
   .hero-inner-container {
     margin: 0px;
     margin-top: 20px;

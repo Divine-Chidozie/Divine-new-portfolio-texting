@@ -5,6 +5,8 @@ const navLogo = document.querySelector(".logo");
 const navListItems = document.querySelectorAll(".nav-list-items");
 const menu = document.getElementById("menu");
 const mobileMenu = document.getElementById("mobileMenu");
+const toggleButton = document.getElementById("toggle-btn");
+console.log(toggleButton);
 
 const navHeaderBackground = `#9318fa`;
 const backgroundTransition = "0.3s ease-in";
@@ -21,6 +23,14 @@ function navHeaderScroll() {
   }
 }
 window.addEventListener("scroll", navHeaderScroll);
+
+// Change Background color to dark mode
+
+toggleButton.addEventListener("click", () => {
+  if ((document.style.backgroundColor = "white")) {
+    document.classList.add("dark-background-color");
+  }
+});
 
 menu.addEventListener("click", function () {
   mobileMenu.classList.toggle("active");
