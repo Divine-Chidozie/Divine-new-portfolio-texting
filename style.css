@@ -2,7 +2,8 @@
   --bg-color: #ffffff;
   --text-color: #000000;
   --heading-color: #000000; /* default heading color */
-
+  --heading-four: oklch(49.6% 0.265 301.924);
+  --para-four: #000000;
   --muted-text: oklch(44.6% 0.03 256.802);
   --primary-color: oklch(49.6% 0.265 301.924);
   --card-bg: #ffffff;
@@ -14,13 +15,13 @@
     rgb(0, 171, 223)
   );
 }
-
 .dark-background {
-  --bg-color: #0e0d0d;
-  --text-color: #ffffff;
+  --bg-color: oklch(12.9% 0.042 264.695);
+  --text-color: oklch(98.4% 0.003 247.858);
   --para-text: #000000;
   --heading-color: #000000; /* heading in dark mode */
   --heading-four: #000000;
+  --para-four: #000000;
   --muted-text: #cccccc;
   --card-bg: #111111;
   --btn-bg: oklch(49.6% 0.265 301.924);
@@ -38,7 +39,6 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--bg-color);
@@ -49,12 +49,14 @@ body {
 .hero-heading {
   color: var(--heading-color);
 }
-
 .hero-para {
   color: var(--para-text);
 }
 .heading-four {
   color: var(--heading-four);
+}
+.para-four {
+  color: var(--para-four);
 }
 /* ***** Sections ***** */
 .about-section,
