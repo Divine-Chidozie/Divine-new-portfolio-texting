@@ -14,7 +14,7 @@
         <span><a href="#home" class="logo">Divine Chidozie</a></span>
         <nav>
           <ul class="nav-header-list">
-            <li><a href="#home">Home</a></li>
+            <li><a class="nav-list-items" href="#home">Home</a></li>
             <li><a class="nav-list-items" href="#projects">Projects</a></li>
             <li><a class="nav-list-items" href="#experience">Experience</a></li>
             <li><a class="nav-list-items" href="#education">Education</a></li>
@@ -113,8 +113,8 @@
             </p>
 
             <div class="hero-btn-container">
-              <a href="pages/skills.html" class="view-btn">View My Works</a>
-              <a href="#contacts" class="contact-btn">Contact Me</a>
+              <a href="#projects" class="view-btn">View My Works</a>
+              <a href="#contact" class="contact-btn">Contact Me</a>
             </div>
           </div>
 
@@ -167,7 +167,7 @@
                 real-world impact.
               </p>
 
-              <ul class="about-para skills-para" id="skills-para">
+              <!-- <ul class="about-para skills-para" id="skills-para">
                 <li>React.js</li>
                 <li>TailwindCss</li>
                 <li>HTML</li>
@@ -176,9 +176,9 @@
                 <li>Bootstrap</li>
                 <li>Git</li>
                 <li>Github</li>
-              </ul>
+              </ul> -->
 
-              <a href="#" id="getInTouch" class="get-in-touch-btn"
+              <a href="#contact" id="getInTouch" class="get-in-touch-btn"
                 >Get in Touch</a
               >
             </div>
@@ -378,13 +378,26 @@
               through the form or reach me via the contact details below—i'd
               love to hear from you
             </p>
-            <a href="#" class="work-together-btn">Let's Work Together</a>
+            <a href="#" class="work-together-btn" id="work-together-btn"
+              >Let's Work Together</a
+            >
           </div>
 
           <section class="contact-address-form">
             <aside class="address">
               <address class="email-container">
                 <!-- Add message image icon later: don't forget -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#e3e3e3"
+                >
+                  <path
+                    d="M440-520 120-720v400h400v80H120q-33 0-56.5-23.5T40-320v-480q0-33 23.5-56.5T120-880h640q33 0 56.5 23.5T840-800v200h-80v-120L440-520Zm0-80 320-200H120l320 200ZM760-80q-66 0-113-47t-47-113v-180q0-42 29-71t71-29q42 0 71 29t29 71v180h-80v-180q0-8-6-14t-14-6q-8 0-14 6t-6 14v180q0 33 23.5 56.5T760-160q33 0 56.5-23.5T840-240v-160h80v160q0 66-47 113T760-80ZM120-720v-80 480-400Z"
+                  />
+                </svg>
                 <h4>Email</h4>
                 <p>
                   <a class="email-link" href="mailto:igwedivine92@gmail.com"
@@ -394,6 +407,17 @@
               </address>
 
               <address class="phone-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#e3e3e3"
+                >
+                  <path
+                    d="m720-560-58-56 64-64H520v-80h206l-62-62 56-58 160 162-160 158Zm78 440q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"
+                  />
+                </svg>
                 <!-- Add phone icon image later: don't forget -->
                 <h4>Phone</h4>
                 <p>+234 814 244 3836</p>
@@ -401,6 +425,17 @@
 
               <address class="location-container">
                 <!-- Add location image icon later: don't forget -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#e3e3e3"
+                >
+                  <path
+                    d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"
+                  />
+                </svg>
                 <h4>Location</h4>
                 <p>Lagos State, Nigeria</p>
               </address>
@@ -410,7 +445,7 @@
               </div>
             </aside>
 
-            <form action="/form/api/contact" method="post">
+            <form id="form" action="/form/api/contact" method="post">
               <input
                 type="text"
                 name="name"
@@ -467,8 +502,14 @@
               <a href="mailto:igwedivine92@gmail.com">igwedivine92@gmail.com</a>
             </p>
 
-            <div>
+            <div class="footer-link-icons">
               <!-- add social media icons: also to represent your social handles -->
+              <a href="">
+                <img src="images/logo-github.svg" alt="Logo of Github" />
+              </a>
+              <a href="">
+                <img src="images/logo-linkedin.svg" alt="Logo of Linkedin" />
+              </a>
             </div>
           </div>
         </div>
