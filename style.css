@@ -225,6 +225,10 @@ main {
   margin: 0px 50px;
   border-radius: 50%;
   object-fit: cover;
+  transition: 0.3s ease-in;
+}
+.hero-image:hover {
+  box-shadow: 0px 0px 25px oklch(49.6% 0.265 301.924);
 }
 
 /* ***** About Section ***** */
@@ -366,20 +370,24 @@ main {
   font-size: 15px;
   border-radius: 4px;
 }
-
-.project-link {
+.project-btn {
+  /* background-color: red; */
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 10px;
+}
+.project-link,
+.view-github {
   text-decoration: none;
   background-color: var(--primary-color);
   color: #ffffff;
-  margin: 10px 0;
-  margin-left: 15px;
-  width: 90%;
-  max-width: 500px;
+  margin: 5px 0;
+  margin-left: 5px;
   text-align: center;
-  padding: 10px 24px;
+  padding: 5px 10px;
   border-radius: 4px;
-  font-size: 17px;
-  display: block;
+  font-size: 15px;
 }
 
 /* ***** Experience Section ***** */

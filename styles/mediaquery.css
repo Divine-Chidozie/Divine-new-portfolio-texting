@@ -184,13 +184,17 @@
   .ex-para,
   .contact-para {
     width: 100%;
-    text-align: center;
+    text-align: justify;
     font-size: 17px;
     margin-bottom: 20px;
   }
   .ex-para {
     margin-bottom: 0px;
     margin-top: -10px;
+  }
+  .first-project-para {
+    padding: 10px;
+    font-size: 14px;
   }
   .first-project-paucek {
     width: 100%;
