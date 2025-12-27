@@ -634,3 +634,67 @@ textarea {
   margin-bottom: 25px;
   color: var(--muted-text);
 }
+
+/* ***** Skill Page Style ***** */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.skill-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  margin: 15px 0;
+}
+.skill-heading {
+  color: var(--heading-color);
+  font-size: 22px;
+}
+.skill-para {
+  font-size: 16px;
+  width: 80%;
+  max-width: 900px;
+}
+.skill-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  gap: 10px;
+}
+
+
+.fontend-core {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 20px;
+}
+.frontend-core-heading {
+  color: red;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.frontend-core-para {
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: oklch(70.7% 0.022 261.325);
+}
+.frontend-core-list {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+.frontend-core-list li {
+  font-size: 13px;
+  margin-top: 10px;
+  background-color: oklch(94.6% 0.033 307.174);
+  color: var(--primary-color);
+  padding: 2px 5px;
+  border-radius: 4px;
+}
